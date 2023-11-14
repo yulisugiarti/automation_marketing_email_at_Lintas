@@ -27,7 +27,7 @@ with open("Offering_letter.html") as content:
         complete_mail = mail_content.replace("[FIELD]", list_name_field[names])
         body = complete_mail
         sender_email = "PUT YOUR EMAIL ADRESS HERE"
-        password = "PUT YOUR APP PASSWORD HERE (it can be from google account or emaail that you use"
+        password = "PUT YOUR APP PASSWORD HERE (it can be from google account or email that you use"
         receiver_email = name_email_list[names]
         # Create a multipart message and set headers
         message = MIMEMultipart("alternative")
