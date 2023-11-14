@@ -16,6 +16,7 @@ data = pd.read_csv("Daftar Nama Leads.csv")
 list_name_email = {row_content.Nama: row_content.email for (index, row_content) in data.iterrows()}
 list_name_field = {row_content.Nama: row_content.Bidang_Usaha for (index_data, row_content) in data.iterrows()}
 
+#we can also change the day_now and month_now to be the same date and month inside the CSV file that we target
 name_email_list = {row.Nama: row.email for (index, row) in data.iterrows() if row.Tanggal == day_now and row.Bulan == month_now}
 
 with open("Offering_letter.html") as content:
